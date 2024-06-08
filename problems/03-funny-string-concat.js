@@ -20,9 +20,11 @@ at least 3 letters.)
 uses the String `substring` method--look it up on MDN!--and consists of only one 
 line inside the function block.
 */
+function funnyStringConcat (str1, str2) {
+    return str1.slice(0, 3) + str2.slice(str2.length - 3);
+}
 
-
-// console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
+console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
 // console.log(funnyStringConcat("number", "soldier"));  //=> "numier"
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
